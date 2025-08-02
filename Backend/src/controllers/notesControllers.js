@@ -7,8 +7,8 @@ import Note from "../models/Note.js";
 // GET request
 export async function getAllNotes(req, res) {
     try {
-        const notes = await Note.find();
-        res.status(20).json(notes);
+        const notes = await Note.findx();
+        res.status(200).json(notes);
     } catch (error) {
         console.error("error in getAllNotes controller", error);
         res.status(500).json({ message: "Internal Server Error" });
@@ -18,15 +18,8 @@ export async function getAllNotes(req, res) {
 // POST request
 export async function createNotes(req, res) {
     try {
-        console.log("Request Body:", req.body); // ✅ Add this to debug if body is missing
-
         const { title, content } = req.body;
-
-        if (!title || !content) {
-            return res.status(400).json({ message: "Title and content are required." });
-        }
-
-        const newNote = new Note({ title, content });
+        const newNote = new Note({ title , content });
         await newNote.save();
 
         res.status(201).json({ message: "Note created successfully", note: newNote });
