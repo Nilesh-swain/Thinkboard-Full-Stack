@@ -1,0 +1,5 @@
+Note :
+
+-> Install pakages will be:-
+    1. npm i react-router  
+    2. npm i react-hot-toast

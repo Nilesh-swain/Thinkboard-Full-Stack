@@ -1,7 +1,11 @@
+
+// middleware/rateLimiter.js
 import ratelimit from "../config/upstash.js";
+
 const rateLimiter = async (req, res, next) => {
   try {
-    const { success } = await ratelimit.limit("my-rate-limit");
+    const identifier = req.ip;
+    const { success } = await ratelimit.limit(identifier);
 
     if (!success) {
       return res.status(429).json({
@@ -11,10 +15,12 @@ const rateLimiter = async (req, res, next) => {
 
     next();
   } catch (error) {
-    console.log("Rate limit error", error);
-    next(error);
+    console.log("Rate limit error:", error.message); // Keep message clean
+    next(error); // let it pass even if rate limit fails (optional)
   }
 };
 
 export default rateLimiter;
+
+
 
