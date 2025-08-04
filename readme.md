@@ -1,5 +1,4 @@
-# Backend Development
-## status code
+
 <h1 align="center">Hi 👋, I'm Nilesh Swain</h1>
 <h3 align="center">A Hands-On Journey Through Full-Stack Web Development — From Basics to Backend, Styled with Code and Curiosity.</h3>
 
