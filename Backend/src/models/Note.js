@@ -1,42 +1,21 @@
-// import mongoose from "mongoose";
+import mongoose from "mongoose";
 
-// // 1-create a shchema
-// // 2-model based off of that schema
-// const noteSchema = new mongoose.schema(
-//     {
-//         title: {
-//             type: String,
-//             required: true
-//         },
-//         content: {
-//             type: String,
-//             required: true
-//         },
-//     },
-//     {timestamps: true} //created and updated time
-// );
+// 1st step: You need to create a schema
+// 2nd step: You would create a model based off of that schema
 
-
-// //create model.
-// const Note = mongoose.model("Note",noteSchema)
-// export default Note
-
-import mongoose from 'mongoose';
-
-const noteSchema = new mongoose.Schema({
+const noteSchema = new mongoose.Schema(
+  {
     title: {
-        type: String,
-        required: true,
+      type: String,
+      required: true,
     },
     content: {
-        type: String,
-        required: true,
+      type: String,
+      required: true,
     },
-    createdAt: {
-        type: Date,
-        default: Date.now,
-    }
-});
+  },
+  { timestamps: true } // createdAt, updatedAt
+);
 
 const Note = mongoose.model("Note", noteSchema);
 
