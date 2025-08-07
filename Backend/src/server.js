@@ -1,22 +1,28 @@
 import express from 'express';
 // const express = require('express');
 import notesRouters from './router/notesRouters.js';
-import { connectDB } from './config/db.js';
 import dotenv from "dotenv"
 
+// All rocal import. 
+import { connectDB } from './config/db.js';
 import rateLimiter from './middleware/rateLimiter.js';
+import cors from "cors"
 
 
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 3000 ;
+const PORT = process.env.PORT || 5001 ;
 
 // connectDB();
 
 //midlewire
+app.use(cors({
+    origin:"http://localhost:5173"
+}));     // it must present in the biging.
 app.use(express.json()); //this middlewire is parse JSON body: req.body
 app.use(rateLimiter);
+
 
 
 // it is a simle coustom skipMiddlewareFunction. 
