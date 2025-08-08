@@ -87,4 +87,3 @@ Note :
    -----------------------------------
    1. npm install cors ->package install at backend.
 
-
