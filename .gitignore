@@ -31,7 +31,6 @@ dist-ssr/
 
 # Project-specific files
 **/Note.txt
-**/utils.js
 
 # Environment variables
 .env
