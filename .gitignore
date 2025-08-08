@@ -9,9 +9,7 @@ pnpm-debug.log*
 lerna-debug.log*
 
 # Dependency directories
-node_modules/
-/backend/node_modules
-/frontend/node_modules
+node_modules
 
 # Build outputs
 dist/
@@ -32,17 +30,9 @@ dist-ssr/
 *.sw?
 
 # Project-specific files
-.Note.txt
+Note.txt
 
 # Environment variables
 .env
 
 
-/node_modules
-/backend/node_modules
-/frontend/node_modules
-
-# Backend specific ignores
-/backend/node_modules/
-/backend/some_specific_directory/
-/backend/*.log
