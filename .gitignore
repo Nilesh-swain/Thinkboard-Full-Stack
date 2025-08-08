@@ -1,3 +1,4 @@
+
 # Logs
 logs
 *.log
@@ -7,15 +8,22 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Dependency directories
+node_modules/
+/backend/node_modules
+/frontend/node_modules
+
+# Build outputs
+dist/
+dist-ssr/
+
+# Local files
 *.local
 
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
 *.suo
 *.ntvs*
@@ -23,4 +31,18 @@ dist-ssr
 *.sln
 *.sw?
 
+# Project-specific files
+**/Note.txt
+
+# Environment variables
 .env
+
+
+/node_modules
+/backend/node_modules
+/frontend/node_modules
+
+# Backend specific ignores
+/backend/node_modules/
+/backend/some_specific_directory/
+/backend/*.log

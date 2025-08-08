@@ -86,3 +86,5 @@ Note :
 ## cors(cross-origin Resource Sharing)
    -----------------------------------
    1. npm install cors ->package install at backend.
+
+
