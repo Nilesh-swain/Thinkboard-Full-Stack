@@ -25,6 +25,7 @@ dist-ssr
 
 **/Note.txt
 **/utils.js
+.env
 
 
 
