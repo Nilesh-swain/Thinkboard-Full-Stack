@@ -1,0 +1,19 @@
+{
+  "name": "thinkboard-full-stack",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Hi 👋, I'm Nilesh Swain</h1>\r <h3 align=\"center\">A Hands-On Journey Through Full-Stack Web Development — From Basics to Backend, Styled with Code and Curiosity.</h3>",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nilesh-swain/Thinkboard-Full-Stack.git"
+  },
+  "author": "Nilesh Swain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nilesh-swain/Thinkboard-Full-Stack/issues"
+  },
+  "homepage": "https://github.com/Nilesh-swain/Thinkboard-Full-Stack#readme"
+}
