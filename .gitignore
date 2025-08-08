@@ -42,4 +42,7 @@ dist-ssr/
 /backend/node_modules
 /frontend/node_modules
 
-
+# Backend specific ignores
+/backend/node_modules/
+/backend/some_specific_directory/
+/backend/*.log
