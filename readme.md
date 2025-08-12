@@ -53,14 +53,14 @@
 ### **Prerequisites**
 - Node.js **v16+**
 - MongoDB **v4.4+**
-- npm or yarn
+- npm 
 
-### **Setup Instructions**
-```bash
-# 1️⃣ Clone the repository
+Setup Instructions
+bash
+ ## 1️⃣ Clone the repository
 git clone https://github.com/Nilesh-swain/Thinkboard-Full-Stack.git
 cd Thinkboard-Full-Stack
 
-# 2️⃣ Install dependencies
+## 2️⃣ Install dependencies
 cd server && npm install
 cd ../client && npm install
