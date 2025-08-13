@@ -1,66 +1,81 @@
-<h1 align="center">Hi 👋, I'm Nilesh Swain</h1>
-<h3 align="center">A Hands-On Journey Through Full-Stack Web Development — From Basics to Backend, Styled with Code and Curiosity.</h3>
+# 📌 Thinkboard – Full-Stack Productivity App
 
-<p align="center">
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=nilesh-swain&theme=onedark" alt="nilesh-swain" />
-  </a>
-</p>
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Tech](https://img.shields.io/badge/stack-MERN-green.svg)
 
----
-
-## 🔭 Currently Working On
-[**Thinkboard – Full Stack Collaborative Whiteboard**](https://github.com/Nilesh-swain/Thinkboard-Full-Stack)
-
-> A real-time collaborative whiteboard built with the MERN stack and Socket.io for seamless drawing experiences.
+Thinkboard is a modern, full-stack productivity application that enables users to efficiently **create, edit, and manage notes** in one place.  
+It features a **responsive UI** and a **robust backend**, ensuring smooth performance and scalability across devices.
 
 ---
 
-## 🚀 Thinkboard Features
-- 🎨 **Real-time Collaboration** – Multiple users draw & edit together
-- 🖌 **Drawing Tools** – Brush, shapes, text, color palette
-- 🗒 **Sticky Notes** – Add & edit text notes
-- 🔗 **Shareable Boards** – Unique URLs for easy sharing
-- 💾 **Auto-save** – Never lose your work
-- 📱 **Responsive Design** – Works on desktop & tablet
+## 🚀 Features
+
+- 📝 **Note Management** – Create, edit, and delete notes in real-time.
+- 🌐 **Full-Stack Architecture** – Smooth communication between frontend & backend.
+- 📱 **Responsive UI** – Optimized for desktop and mobile devices.
+- 🔒 **Secure CRUD Operations** – Persistent storage with MongoDB.
+- ⚡ **High Performance** – Built with Vite for blazing-fast load times.
 
 ---
 
 ## 🛠 Tech Stack
 
-### **Frontend**
-- ⚛ React.js + TypeScript
-- 🗂 Redux for state management
-- 🖼 Fabric.js for canvas rendering
-- 🔄 Socket.io-client for real-time sync
-- 🎨 Tailwind CSS for styling
+**Frontend:**
+- React.js
+- Vite
+- Tailwind CSS
+- React Router DOM
 
-### **Backend**
-- 🌐 Node.js + Express
-- 🔌 Socket.io for WebSocket communication
-- 🗄 MongoDB + Mongoose
-- 🔑 JWT Authentication
+**Backend:**
+- Node.js
+- Express.js
 
-### **Deployment**
-- 📦 Docker containerization
-- ☁ AWS EC2 Hosting
-- 🌍 Nginx Reverse Proxy
+**Database:**
+- MongoDB
+
+**Version Control:**
+- Git & GitHub
 
 ---
 
-## 📥 Installation
+## 📦 Installation & Setup
 
-### **Prerequisites**
-- Node.js **v16+**
-- MongoDB **v4.4+**
-- npm 
-
-Setup Instructions
-bash
- ## 1️⃣ Clone the repository
+```bash
+# 1️⃣ Clone the repository
 git clone https://github.com/Nilesh-swain/Thinkboard-Full-Stack.git
+
+# 2️⃣ Navigate to project folder
 cd Thinkboard-Full-Stack
 
-## 2️⃣ Install dependencies
-cd server && npm install
-cd ../client && npm install
+# 3️⃣ Install backend dependencies
+cd Backend
+npm install
+
+# 4️⃣ Install frontend dependencies
+cd ../Frontend
+npm install
+
+# 5️⃣ Start backend server
+cd ../Backend
+npm run dev
+
+# 6️⃣ Start frontend development server
+cd ../Frontend
+npm run dev
+📂 Project Structure
+graphql
+Copy
+Edit
+Thinkboard-Full-Stack/
+│
+├── Backend/          # Express.js server and API routes
+├── Frontend/         # React.js frontend application
+├── package.json      # Project metadata
+├── readme.md         # Project documentation
+└── .gitignore        # Ignored files for Git
+👨‍💻 Author
+Nilesh Swain
+📧 Email: nileshswain715@gmail.com
+🔗 LinkedIn: linkedin.com/in/nilesh-swain
+💻 GitHub: github.com/Nilesh-swain
+
